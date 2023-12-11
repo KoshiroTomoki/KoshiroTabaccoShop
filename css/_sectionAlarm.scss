@@ -1,0 +1,50 @@
+#sectionAlarm {
+    max-width: 1280px;
+
+    position: relative;
+    margin: 0 auto;
+
+    .tyuui {
+        margin-top: 5rem;
+        text-align: center;
+
+        img {
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+
+    .alarmTextBox {
+        text-align: center;
+        
+        .tyuuiText {
+            max-width: 1280px;
+            width: 100%;
+            height: 10rem;
+            font-size: 1.5rem;
+            padding: 0 10rem;
+
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255,255,255,0.7);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (width <=768px) {
+                font-size: 1rem;
+                padding: 0 5rem;
+                height: 8rem;
+            }
+
+            @media (width <=500px) {
+                font-size: 1rem;
+                padding: 0 1rem;
+                height: 7rem;
+            }
+        }
+    }
+}

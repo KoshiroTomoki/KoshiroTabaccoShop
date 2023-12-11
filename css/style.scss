@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@use "destyle";
+@use "header";
+@use "sectionTop";
+@use "drawer";
+@use "sectionConcept";
+@use "sectionSwiper";
+@use "sectionAlarm";
+@use "sectionContact";
+@use "footer";
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+body{
+    background-image: url(../images/background-image.png);
+    background-size: cover;
+}
+
+main {
+    margin-left: 3.1rem;
+
+    @media (width <=768px) {
+        margin: 0 0.5rem;
+    }
+}

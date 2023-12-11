@@ -1,0 +1,80 @@
+#sectionConcept {
+    max-width: 1280px;
+    margin: 5rem auto 0;
+
+    position: relative;
+
+    .conceptborder {
+        height: 150vh;
+        position: absolute;
+        top: 0;
+        left: 15%;
+        border-left: 3px solid rgb(202, 202, 202);
+
+        @media (width <=1200px) {
+            left: 9%;
+        }
+
+        @media (width <=1000px) {
+            left: 3%;
+        }
+
+        @media (width <=800px) {
+            left: 2%;
+        }
+
+        @media (width <=768px) {
+            display: none;
+        }
+    }
+
+    .conceptbox {
+        display: flex;
+        flex-direction: column;
+
+        .conceptbox01 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row-reverse;
+
+            @media (width <=768px) {
+                flex-direction: column;
+            }
+
+            .conceptText {
+                max-width: 300px;
+                width: 100%;
+                margin-left: 3rem;
+
+                @media (width <=768px) {
+                    text-align: center;
+                    margin-left: 0;
+                    margin-top: -1rem;
+                }
+            }
+
+            p {
+                margin-bottom: 5rem;
+                @media (width <=768px) {
+margin-bottom: 2rem;
+                }
+
+            }
+
+            img {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            .conceptborder01{
+
+                @media (width <=768px) {
+                    height: 5rem;
+                    margin-bottom: 2rem;
+                    border-left: 3px solid rgb(202, 202, 202);
+                }
+            }
+        }
+    }
+}
