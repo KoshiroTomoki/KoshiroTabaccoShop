@@ -707,6 +707,10 @@ th {
     flex-direction: column;
   }
 }
+#sectionConcept .conceptbox .conceptbox01 .imagep {
+  font-size: 2rem;
+  color: red;
+}
 #sectionConcept .conceptbox .conceptbox01 .concept01image {
   border: 1px solid black;
   max-width: 500px;
@@ -846,7 +850,7 @@ th {
 }
 @media (width <= 550px) {
   #sectionContact {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 #sectionContact .contactText {
@@ -857,14 +861,24 @@ th {
 @media (width <= 550px) {
   #sectionContact .contactText {
     width: 100%;
-    margin: 0 auto;
-    margin-left: 3rem;
+    margin-left: 0rem;
     font-size: 1rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 #sectionContact .contactText p {
   padding-top: 3rem;
+}
+@media (width <= 550px) {
+  #sectionContact .contactText p {
+    padding: 1rem;
+  }
 }
 #sectionContact .contactImage {
   max-width: 500px;
